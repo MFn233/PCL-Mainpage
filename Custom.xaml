@@ -27,7 +27,7 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                     <local:MyButton Grid.Column="0" Margin="10,20,10,12" Height="35" Text="今日人品" EventType="今日人品"/>
-                    <local:MyButton Grid.Column="1" Margin="10,20,10,12" Height="35" Text="随机二次元图" EventType="打开网页" EventData="https://www.loliapi.com/acg/"/>
+                    <local:MyButton Grid.Column="1" Margin="10,20,10,12" Height="35" Text="二次元图" EventType="打开网页" EventData="https://www.loliapi.com/acg/"/>
           </Grid>
           <Grid>
                <Grid.ColumnDefinitions>
