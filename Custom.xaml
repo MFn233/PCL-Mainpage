@@ -28,7 +28,7 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                     <local:MyButton Grid.Column="0" Margin="10,20,10,12" Height="35" Text="今日人品" EventType="今日人品"/>
-                    <local:MyButton Grid.Column="1" Margin="10,20,10,12" Height="35" Text="随机二次元图" EventType="打开网页" EventData="https://www.loliapi.com/acg/"/>
+                    <local:MyButton Grid.Column="1" Margin="10,20,10,12" Height="35" Text="二次元图" EventType="打开网页" EventData="https://www.loliapi.com/acg/"/>
           </Grid>
           <Grid>
                <Grid.ColumnDefinitions>
@@ -36,7 +36,7 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                     <local:MyButton Grid.Column="0" Margin="10,0,10,12" Height="35" Text="关于作者" EventType="弹出窗口" EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n©MFn233 2023/7/22"/>
-                    <local:MyButton Grid.Column="1" Margin="10,0,10,12" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://www.loliapi.com/acg/"/>
+                    <local:MyButton Grid.Column="1" Margin="10,0,10,12" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"/>
           </Grid>
      </StackPanel>
 </local:MyCard>
@@ -46,6 +46,6 @@
           <TextBlock TextWrapping="Wrap" Width="350" Margin="0,12,0,0" Text="若你在启动器主页一栏填写了此主页的网络链接，点此刷新以获取最新主页文件。"/>
           <TextBlock TextWrapping="Wrap" Width="350" Margin="0,12,0,0" Text="版本: Ver 0.0.1"/>
           <local:MyButton Margin="0,15,0,12" Width="360" Height="35" Text="点此刷新" EventType="刷新主页" ToolTip="awa" />
-          <local:MyButton Margin="0,0,0,12" Width="360" Height="35" Text="下载主页文件" EventType="下载文件" EventData="" ToolTip="下载离线主页文件"/>
+          <local:MyButton Margin="0,0,0,12" Width="360" Height="35" Text="下载主页文件" EventType="下载文件" EventData="https://mfn233.github.io/PCL-Mainpage/Custom.xaml" ToolTip="下载离线主页文件"/>
      </StackPanel>
 </local:MyCard>
