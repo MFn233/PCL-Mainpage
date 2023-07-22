@@ -1,4 +1,4 @@
-﻿<local:MyHint Text="主页作者: MFn233" Padding="0,5,0,5" IsWarn="False" />
+<local:MyHint Text="主页作者: MFn233" Padding="0,5,0,5" IsWarn="False" />
 <local:MyCard Margin="0,12,0,12" Title="网页捷径" CanSwap="True" IsSwaped="False">
      <StackPanel Margin="12,20,12,10">
           <local:MyListItem Margin="-5,12,-5,-2" Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
@@ -9,7 +9,6 @@
 </local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="False">
      <StackPanel Margin="12,20,12,10">
-          <TextBlock TextWrapping="Wrap" Width="360" Margin="0,20,0,0" Text="快捷调用 PCL 自带实用性功能"/>
           <Grid>
               <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
