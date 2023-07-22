@@ -9,7 +9,7 @@
 </local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="False">
      <StackPanel Margin="12,20,12,10">
-          <TextBlock TextWrapping="Wrap" Width="350" Margin="0,20,0,0" Text="快捷调用 PCL 自带实用性功能"/>
+          <TextBlock TextWrapping="Wrap" Width="360" Margin="0,20,0,0" Text="快捷调用 PCL 自带实用性功能"/>
           <Grid>
               <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
