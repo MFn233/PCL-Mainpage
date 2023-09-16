@@ -1,73 +1,97 @@
-﻿<local:MyHint Text="主页作者: MFn233" Margin="0,-13,0,0" Padding="0,5,0,5" IsWarn="False" />
-<local:MyCard Margin="0,12,0,12" Title="网页捷径" CanSwap="True" IsSwaped="False">
+﻿<!--
+ ____                            ___                                                                                 
+/\  _`\   __                    /\_ \               /'\_/`\            __                                            
+\ \,\L\_\/\_\    ___ ___   _____\//\ \      __     /\      \     __   /\_\    ___   _____      __       __      __   
+ \/_\__ \\/\ \ /' __` __`\/\ '__`\\ \ \   /'__`\   \ \ \__\ \  /'__`\ \/\ \ /' _ `\/\ '__`\  /'__`\   /'_ `\  /'__`\ 
+   /\ \L\ \ \ \/\ \/\ \/\ \ \ \L\ \\_\ \_/\  __/    \ \ \_/\ \/\ \L\.\_\ \ \/\ \/\ \ \ \L\ \/\ \L\.\_/\ \L\ \/\  __/ 
+   \ `\____\ \_\ \_\ \_\ \_\ \ ,__//\____\ \____\    \ \_\\ \_\ \__/.\_\\ \_\ \_\ \_\ \ ,__/\ \__/.\_\ \____ \ \____\
+    \/_____/\/_/\/_/\/_/\/_/\ \ \/ \/____/\/____/     \/_/ \/_/\/__/\/_/ \/_/\/_/\/_/\ \ \/  \/__/\/_/\/___L\ \/____/
+                             \ \_\                                                    \ \_\             /\____/      
+                              \/_/                                                     \/_/             \_/__/       
+     \-by MFn-\
+-->
+<local:MyCard Margin="0,0,0,12" Title="欢迎页" CanSwap="True" IsSwaped="False">
      <StackPanel Margin="24,40,24,15">
-          <local:MyListItem Margin="-10,0,-10,-2" Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
-          <local:MyListItem Margin="-10,5,-10,-2" Logo="https://cn.bing.com/favicon.ico" Title="Bing" Info="有求必应" EventType="打开网页" EventData="https://cn.bing.com/" Type="Clickable" />
-          <local:MyListItem Margin="-10,5,-10,-2" Logo="https://www.bilibili.com/favicon.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
-          <local:MyListItem Margin="-10,5,-10,-2" Logo="https://github.githubassets.com/favicon.ico" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
-          <local:MyListItem Margin="-10,5,-10,-2" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="知乎" Info="有问题，就会有答案" EventType="打开网页" EventData="https://www.zhihu.com/" Type="Clickable" />
+          <TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
+               Text="欢迎使用Simple Mainpage!" />
+          <local:MyHint Text="主页作者: MFn233" Margin="0,0,0,0" Padding="0,2,0,2" IsWarn="False" />
+          <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" Grid.Column="0"/>
+          <!--因为“你知道吗”在启动游戏的时候会出现，所以我只在这里设置了回声洞-->
+          <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
+          <local:MyButton Margin="0,-10,-5,0" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="刷新" EventType="刷新主页" EventData="回声洞">
+               <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
+                    <Path.Data>
+                         <PathGeometry FillRule="Nonzero" Figures="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"/>
+                    </Path.Data>
+               </Path>
+          </local:MyButton>
      </StackPanel>
 </local:MyCard>
-<local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="False">
+<local:MyCard Margin="0,0,0,12" Title="网页捷径" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://cn.bing.com/favicon.ico" Title="Bing" Info="有求必应" EventType="打开网页" EventData="https://cn.bing.com/" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://www.bilibili.com/favicon.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="知乎" Info="有问题，就会有答案" EventType="打开网页" EventData="https://www.zhihu.com/" Type="Clickable" />
+     </StackPanel>
+</local:MyCard>
+<local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="打开 PCL 日志" EventType="打开文件" EventData="Log1.txt" ToolTip="查看当前PCL启动器的日志文件。"/>
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="清理垃圾" EventType="清理垃圾" ToolTip="清理垃圾文件。"/>
+          </Grid>
           <Grid>
               <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
               </Grid.ColumnDefinitions>
-                    <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="打开 PCL 日志" EventType="打开文件" EventData="Log1.txt" ToolTip="查看当前PCL启动器的日志文件。"/>
-                    <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="清理垃圾" EventType="清理垃圾" ToolTip="清理垃圾文件。"/>
-          </Grid>
-          <Grid>
-              <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-              </Grid.ColumnDefinitions>
-                    <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="内存优化" EventType="内存优化" ToolTip="将物理内存占用降低约1/3，不仅限于MC！&#xA;如果使用机械硬盘，这可能会导致一小段时间的严重卡顿。"/>
-                    <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="定位游戏启动脚本" EventType="打开文件" EventData="explorer.exe|/select,LatestLaunch.bat" ToolTip="打开PCL上一次启动 MC 的脚本(LatestLaunch.bat)。" />
+               <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="内存优化" EventType="内存优化" ToolTip="将物理内存占用降低约1/3，不仅限于MC！&#xA;如果使用机械硬盘，这可能会导致一小段时间的严重卡顿。"/>
+               <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="定位游戏启动脚本" EventType="打开文件" EventData="explorer.exe|/select,LatestLaunch.bat" ToolTip="打开PCL上一次启动 MC 的脚本(LatestLaunch.bat)。" />
           </Grid>
      </StackPanel>
 </local:MyCard>
-<local:MyCard Margin="0,0,0,12" Title="其他功能" CanSwap="True" IsSwaped="False">
+<local:MyCard Margin="0,0,0,12" Title="下载器" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="24,40,24,15">
+        <local:MyHint Margin="0,0,0,10" IsWarn="True" Text="链接必须为以http://或https://开头的网址，部分网址可能无法下载" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Margin="0,7,0,0" Text="下载链接：" Grid.Column="0" FontSize="13"/>
+            <local:MyTextBox Margin="-5,0,0,0" Name="web" Height="30" Grid.Column="1"/>
+            <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0" ColorType="Highlight"/>
+        </Grid>
+    </StackPanel>  
+</local:MyCard>
+<local:MyCard Margin="0,0,0,12" Title="杂项" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
           <Grid>
                <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
-                    <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="今日人品" EventType="今日人品"/>
-                    <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="二次元图" EventType="打开网页" EventData="https://www.loliapi.com/acg/"/>
-          </Grid>
-          <Grid>
-               <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*" />
-               </Grid.ColumnDefinitions>
-                    <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="关于作者" EventType="弹出窗口" EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n©MFn233 2023/7/22"/>
-                    <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"/>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="今日人品" EventType="今日人品"/>
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="二次元图" EventType="打开网页" EventData="https://www.loliapi.com/acg/"/>
           </Grid>
      </StackPanel>
 </local:MyCard>
-<local:MyCard  Margin="0,0,0,12" Title="离线版本下载" CanSwap="True" IsSwaped="False">
+<local:MyCard Margin="0,0,0,12" Title="关于" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
-          <Image Width="50" Margin="0,0,0,0" Source="pack://application:,,,/images/Blocks/CommandBlock.png"/>
           <Grid>
                <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
-               </Grid.ColumnDefinitions>
-                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,12,0,0" Text="主页版本: Ver 0.0.3"/>
-          </Grid>
-          <Grid>
-               <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
-                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,12,0,0" Text="你可以在此处下载主页文件，以便离线使用。"/>
-          </Grid>
-          <Grid>
-               <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-               </Grid.ColumnDefinitions>
-                    <local:MyButton Margin="0,15,0,0" Height="35" Text="点击下载最新主页文件" EventType="下载文件" EventData="https://mfn233.github.io/PCL-Mainpage/Custom.xaml" ToolTip="下载离线主页文件(链接来自GitHub)"/>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="关于作者" EventType="弹出窗口" EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n©MFn233 2023/7/22"/>
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"/>
           </Grid>
      </StackPanel>
 </local:MyCard>
