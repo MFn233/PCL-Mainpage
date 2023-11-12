@@ -9,6 +9,7 @@
                              \ \_\                                                    \ \_\             /\____/      
                               \/_/                                                     \/_/             \_/__/       
      \-by MFn-\
+      \-https://github.com/MFn233/PCL-Mainpage-\
 -->
 <local:MyCard Margin="0,0,0,12" Title="欢迎页" CanSwap="True" IsSwaped="False">
      <StackPanel Margin="24,40,24,15">
@@ -24,16 +25,43 @@
                          <PathGeometry FillRule="Nonzero" Figures="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"/>
                     </Path.Data>
                </Path>
+               <!-- 网上随便抄来的刷新按钮。。。因为path不会画 -->
           </local:MyButton>
      </StackPanel>
 </local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="网页捷径" CanSwap="True" IsSwaped="True">
-     <StackPanel Margin="24,40,24,15">
-          <local:MyListItem Margin="-2,0,0,0" Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="https://cn.bing.com/favicon.ico" Title="Bing" Info="有求必应" EventType="打开网页" EventData="https://cn.bing.com/" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="https://www.bilibili.com/favicon.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="知乎" Info="有问题，就会有答案" EventType="打开网页" EventData="https://www.zhihu.com/" Type="Clickable" />
+     <StackPanel Margin="20,40,20,15">
+          <local:MyCard Margin="0,0,0,6" Title="常用网站" CanSwap="True" IsSwaped="False">
+               <StackPanel Margin="24,40,24,15">
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://cn.bing.com/favicon.ico" Title="Bing" Info="有求必应" EventType="打开网页" EventData="https://cn.bing.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.bilibili.com/favicon.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="知乎" Info="有问题，就会有答案" EventType="打开网页" EventData="https://www.zhihu.com/" Type="Clickable" />
+               </StackPanel>
+          </local:MyCard>
+          <local:MyCard Margin="0,0,0,12" Title="Minecraft相关" CanSwap="True" IsSwaped="False">
+               <StackPanel Margin="24,40,24,15">
+                    <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/Grass.png"
+                         Title="Minecraft官网" Info="Minecraft国际版官网" EventType="打开网页" EventData="https://www.minecraft.net" Type="Clickable" />
+                         <!-- 藏得很隐蔽。。 
+                              https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/favicon.ico
+                              但是加载不出来
+                         -->
+                    <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/Grass.png" Title="网易我的世界官网" Info="我的世界中国版官网" EventType="打开网页" EventData="https://mc.163.com/" Type="Clickable" />
+                         <!-- https://mc.163.com/favicon.ico
+                              太低清。。
+                         -->
+                    <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="MCBBS" Info="最大的我的世界《Minecraft》中文论坛" EventType="打开网页" EventData="https://www.mcbbs.net" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://klpbbs.com/favicon.ico" Title="苦力怕BBS" Info="最大的我的世界《Minecraft》基岩版（BE）中文资源、交流论坛之一" EventType="打开网页" EventData="https://klpbbs.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.minebbs.com/favicon.ico" Title="MineBBS" Info="以我的世界基岩版（MCBE）内容为主的Minecraft中文论坛。" EventType="打开网页" EventData="https://www.minebbs.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.mcmod.cn/favicon.ico" Title="MC百科" Info="最大的Minecraft中文Mod百科" EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://zh.minecraft.wiki/favicon.ico" Title="中文Minecraft Wiki" Info="最详细的我的世界百科" EventType="打开网页" EventData="https://zh.minecraft.wiki/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://static-beta.curseforge.com/images/favicon.ico" Title="Curseforge" Info="The Home for the Best Minecraft Mods" EventType="打开网页" EventData="https://www.curseforge.com/minecraft" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://modrinth.com/favicon.ico" Title="Modrinth" Info="Discover, play, and share Minecraft content through our open-source platform built for the community." EventType="打开网页" EventData="https://modrinth.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://mcpedl.com/favicon.ico" Title="MCPEDL" Info="Minecraft PE Mods, Maps, Skins, Seeds, Texture Packs" EventType="打开网页" EventData="https://mcpedl.com/" Type="Clickable" />
+               </StackPanel>
+          </local:MyCard>
      </StackPanel>
 </local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="True">
@@ -79,7 +107,15 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="今日人品" EventType="今日人品"/>
-               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="二次元图" EventType="打开网页" EventData="https://www.loliapi.com/acg/"/>
+               <!--
+                    <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="二次元图" EventType="打开网页" EventData=""/> 
+                    龙猫为了让我删掉这个功能甚至发了个issue，因为它会刷r18图
+                    虽然我没刷出来过，不过还是删掉为好吧
+                    或许我会找其他正常点的api替代，也或许以后都不会再有了
+                    api: https://www.loliapi.com/
+               -->
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Text="启动Minecraft基岩版" EventType="打开网页" EventData="minecraft://" ToolTip="如果你的电脑上安装了Minecraft基岩版，按下这个按钮将会启动它。（别不信，真有效，不是“千万别点”伪装的）" />
+               <!-- 别不信，真有效 -->
           </Grid>
      </StackPanel>
 </local:MyCard>
@@ -90,8 +126,17 @@
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
-               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="关于作者" EventType="弹出窗口" EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n©MFn233 2023/7/22"/>
+               <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="关于作者" EventType="弹出窗口" 
+                    EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。欢迎你前往仓库为我的项目提issue\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n鸣谢：\nMCSteve123(GitHub)提供增加Minecraft相关网页捷径的建议\nSIPC(sipc.ink)帮助将主页文件挂载于云服务器\n\n©MFn233 2023/7/22"/>
                <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"/>
+          </Grid>
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="更新日志" EventType="打开网页" 
+                    EventData="https://github.com/MFn233/PCL-Mainpage/releases/latest" ToolTip="将前往GitHub查看最新版本更新日志"/>
           </Grid>
      </StackPanel>
 </local:MyCard>
