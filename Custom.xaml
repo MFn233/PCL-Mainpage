@@ -58,7 +58,7 @@
           <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
                       Text="　　Fandom并不会关闭已经迁移的wiki，所以旧的Fandom wiki仍然会留在原地，并在搜索结果里占坑。旧域名“minecraft-zh.gamepedia.com”以及“zh.minecraftwiki.net”也仍然会跳转至Fandom wiki。&#xA;　　因此，为了新wiki能够顺利运作，我们需要你的帮助！下面是几种帮忙的方式："/>
           <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold" FontSize="15"
-                      Text="　· 分享转发！告诉你们的朋友，我们已经迁到新地方了&#xA;　· 不在点击Fandom链接&#xA;　· 不要再使用旧域名&#xA;　· 协助改进wiki！在新wiki中，你甚至不需要账号就可以编辑了！"/>
+                      Text="　· 分享转发！告诉你们的朋友，我们已经迁到新地方了&#xA;　· 不再点击Fandom链接&#xA;　· 不要再使用旧域名&#xA;　· 协助改进wiki！在新wiki中，你甚至不需要账号就可以编辑了！"/>
           <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold" Background="{DynamicResource ColorBrush7}" Foreground="{DynamicResource ColorBrush3}" FontSize="15"
                       Text="　此外，请勿破坏原本的Fandom wiki，并且也不要在原本的Fandom wiki上宣传新wiki。这并不道德。"/>
           <TextBlock TextWrapping="Wrap" Margin="0,5,0,4" Foreground="{DynamicResource ColorBrush4}" FontWeight="Bold" FontSize="20"
