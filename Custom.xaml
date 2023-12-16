@@ -29,6 +29,44 @@
           </local:MyButton>
      </StackPanel>
 </local:MyCard>
+<local:MyCard Margin="0,0,0,15" Title="Minecraft Wiki迁移的通知" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="25,40,23,15">
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush2}" FontWeight="Bold" FontSize="25"
+                      Text="Minecraft Wiki:迁移通知" />
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush5}"
+                      Text="注：为方便阅读，此内容有大量删改，请以原文为准"/>
+          <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+               <local:MyButton Margin="0,0,5,2" Height="35" HorizontalAlignment="Center" Padding="25,0,25,0"
+                         Text="点此访问新Minecraft Wiki" EventType="打开网页" EventData="https://zh.minecraft.wiki"/>
+               <local:MyButton Margin="0,0,0,2" Height="35" HorizontalAlignment="Center" Padding="25,0,25,0"
+                         Text="点此查看完整通知" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:迁移通知"/>
+          </StackPanel>
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
+                      Text="致各位读者：&#xA;大家好！&#xA;　　我们很高兴宣布，中文Minecraft Wiki已经从Fandom迁移到zh.minecraft.wiki了——一切与Minecraft有关的信息，在新地方应有尽有！&#xA;　　这次迁站最重要的目的就是改善读者体验。以下是访问新wiki时你可能会注意到的一些变动：" />
+          <TextBlock TextWrapping="Wrap" Margin="0,5,0,4" Foreground="{DynamicResource ColorBrush4}" FontWeight="Bold" FontSize="20"
+                      Text="新Wiki的变动"/>
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold" FontSize="15"
+                      Text="　· 更快的加载速度&#xA;　· 更少的广告&#xA;　· 新皮肤&#xA;　· 更完善的搜索功能&#xA;　· 没有年龄弹窗&#xA;　· 匿名编辑回归" />
+          <TextBlock TextWrapping="Wrap" Margin="0,5,0,4" Foreground="{DynamicResource ColorBrush4}" FontWeight="Bold" FontSize="20"
+                      Text="Fandom的三桩恶行"/>
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold" FontSize="15"
+                      Text="　· 言而无信&#xA;　· 屏蔽新Wiki链接&#xA;　· 想方设法阻止Wiki迁移"/>
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
+                      Text="　　以上种种劣行，充分展现了Fandom对于wiki社区合理愿望的践踏，同时也为“迁出Fandom”这一选择的正确性提供了又一例证。在Fandom如此高压的政策之下，来自社区的支持格外重要！"/>
+          <TextBlock TextWrapping="Wrap" Margin="0,5,0,4" Foreground="{DynamicResource ColorBrush4}" FontWeight="Bold" FontSize="20"
+                      Text="我们需要你的帮助"/>
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
+                      Text="　　Fandom并不会关闭已经迁移的wiki，所以旧的Fandom wiki仍然会留在原地，并在搜索结果里占坑。旧域名“minecraft-zh.gamepedia.com”以及“zh.minecraftwiki.net”也仍然会跳转至Fandom wiki。&#xA;　　因此，为了新wiki能够顺利运作，我们需要你的帮助！下面是几种帮忙的方式："/>
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold" FontSize="15"
+                      Text="　· 分享转发！告诉你们的朋友，我们已经迁到新地方了&#xA;　· 不在点击Fandom链接&#xA;　· 不要再使用旧域名&#xA;　· 协助改进wiki！在新wiki中，你甚至不需要账号就可以编辑了！"/>
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontWeight="Bold" Background="{DynamicResource ColorBrush7}" Foreground="{DynamicResource ColorBrush3}" FontSize="15"
+                      Text="　此外，请勿破坏原本的Fandom wiki，并且也不要在原本的Fandom wiki上宣传新wiki。这并不道德。"/>
+          <TextBlock TextWrapping="Wrap" Margin="0,5,0,4" Foreground="{DynamicResource ColorBrush4}" FontWeight="Bold" FontSize="20"
+                      Text="镜像站"/>
+          <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
+                      Text="2020年，中文Minecraft Wiki在BWIKI和网易设立了镜像站点。设立镜像站点是我们为解决Fandom的加载速度不甚理想这一问题而采取的权宜之策。然而在迁移后，访问速度有了大幅提升，达到了可以接受的程度；此外直接访问源站可以获取最新信息，且所有人均可以编辑更新。因此，两个镜像站将会关闭。"/>
+     </StackPanel>
+</local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="网页捷径" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="20,40,20,15">
           <local:MyCard Margin="0,0,0,6" Title="常用网站" CanSwap="True" IsSwaped="False">
@@ -137,6 +175,8 @@
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="更新日志" EventType="打开网页" 
                     EventData="https://github.com/MFn233/PCL-Mainpage/releases/latest" ToolTip="将前往GitHub查看最新版本更新日志"/>
+               <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="我的网站" EventType="打开网页" 
+                    EventData="https://mfn233.github.io" ToolTip="将前往作者的GitHub Pages"/>
           </Grid>
      </StackPanel>
 </local:MyCard>
