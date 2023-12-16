@@ -30,6 +30,7 @@
      </StackPanel>
 </local:MyCard>
 <local:MyCard Margin="0,0,0,15" Title="Minecraft Wiki迁移的通知" CanSwap="True" IsSwaped="True">
+     <!-- 原文链接：https://zh.minecraft.wiki/w/Minecraft_Wiki:迁移通知 -->
      <StackPanel Margin="25,40,23,15">
           <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush2}" FontWeight="Bold" FontSize="25"
                       Text="Minecraft Wiki:迁移通知" />
