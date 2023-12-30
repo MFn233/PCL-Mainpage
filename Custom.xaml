@@ -31,6 +31,15 @@
 </local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="网页捷径" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="20,40,20,15">
+          <!-- 尝试做了一下，输入网页，按按钮打开。这将会加入V0.0.5中。 -->
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+                    <local:MyTextBox Margin="0,0,0,10" Name="site" Height="30" Grid.Column="0"/>
+                    <local:MyButton EventType="打开网页" EventData="{Binding ElementName=site,Path=Text}" Text="打开网页" Margin="5,0,0,10" Height="30" Grid.Column="1" Padding="2,0,2,0" ColorType="Highlight"/>
+               </Grid>
           <local:MyCard Margin="0,0,0,6" Title="常用网站" CanSwap="True" IsSwaped="False">
                <StackPanel Margin="24,40,24,15">
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
@@ -114,9 +123,10 @@
                     或许我会找其他正常点的api替代，也或许以后都不会再有了
                     api: https://www.loliapi.com/
                -->
-               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Text="启动Minecraft基岩版" EventType="打开网页" EventData="minecraft://" ToolTip="如果你的电脑上安装了Minecraft基岩版，按下这个按钮将会启动它。（别不信，真有效，不是“千万别点”伪装的）" />
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Text="启动Minecraft基岩版" EventType="打开网页" EventData="minecraft://" ToolTip="如果你的电脑上安装了Minecraft基岩版，按下这个按钮将会启动它。" />
                <!-- 别不信，真有效 -->
           </Grid>
+          <local:MyListItem Margin="-2,12,0,0" Logo="https://zh.minecraft.wiki/favicon.ico" Title="【重要！】中文MC Wiki迁移通知" Info="中文MinecraftWiki现已迁移至zh.minecraft.wiki,请不要再访问旧的网站!" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5" Type="Clickable" />
      </StackPanel>
 </local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="关于" CanSwap="True" IsSwaped="True">
@@ -127,7 +137,7 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="关于作者" EventType="弹出窗口" 
-                    EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。欢迎你前往仓库为我的项目提issue\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n鸣谢：\nMCSteve123(GitHub)提供增加Minecraft相关网页捷径的建议\nSIPC(sipc.ink)帮助将主页文件挂载于云服务器\n\n©MFn233 2023/7/22"/>
+                    EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。欢迎你前往仓库为我的项目提issue\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n鸣谢：\nMCSteve123(GitHub)提供增加Minecraft相关网页捷径的建议\nJingHai-Lingyun(GitHub)提供修复建议与改进建议\nSIPC(sipc.ink)帮助将主页文件挂载于云服务器\n\n©MFn233 2023/7/22"/>
                <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库" EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"/>
           </Grid>
           <Grid>
