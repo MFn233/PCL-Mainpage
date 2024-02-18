@@ -31,7 +31,7 @@
                     ToolTip="Minecraft新闻(作者：最亮的信标)" EventData="https://news.bugjump.net/News.json" EventType="打开帮助" VerticalAlignment="Bottom"/>
                <local:MyIconButton Grid.Column="2" LogoScale="1.2" Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"
                     Height="21" Margin="0,5,0,0"
-                    ToolTip="点此刷新" EventData="回声洞" EventType="刷新主页" VerticalAlignment="Bottom"/>
+                    ToolTip="点此刷新" EventType="刷新主页" VerticalAlignment="Bottom"/>
           </Grid>
           <!-- <local:MyButton Margin="0,-10,-5,0" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="刷新" EventType="刷新主页" EventData="回声洞">
                <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
