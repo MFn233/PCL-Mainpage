@@ -20,18 +20,18 @@
           <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" Grid.Column="0"/>
           <!--因为“你知道吗”在启动游戏的时候会出现，所以我只在这里设置了回声洞-->
           <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="{DynamicResource ColorBrush1}" Text="{cave}" />
-          <Grid >
+          <Grid>
                <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5*" />
                     <ColumnDefinition Width="0.3*" />
                     <ColumnDefinition Width="0.5*" />
                </Grid.ColumnDefinitions>
-                    <local:MyIconButton Grid.Column="1" LogoScale="1.2" Logo="M13.5,4A1.5,1.5 0 0,0 12,5.5A1.5,1.5 0 0,0 13.5,7A1.5,1.5 0 0,0 15,5.5A1.5,1.5 0 0,0 13.5,4M13.14,8.77C11.95,8.87 8.7,11.46 8.7,11.46C8.5,11.61 8.56,11.6 8.72,11.88C8.88,12.15 8.86,12.17 9.05,12.04C9.25,11.91 9.58,11.7 10.13,11.36C12.25,10 10.47,13.14 9.56,18.43C9.2,21.05 11.56,19.7 12.17,19.3C12.77,18.91 14.38,17.8 14.54,17.69C14.76,17.54 14.6,17.42 14.43,17.17C14.31,17 14.19,17.12 14.19,17.12C13.54,17.55 12.35,18.45 12.19,17.88C12,17.31 13.22,13.4 13.89,10.71C14,10.07 14.3,8.67 13.14,8.77Z"
-                         Height="21" Margin="0,5,0,0"
-                         ToolTip="Minecraft新闻(作者：最亮的信标)" EventData="https://news.bugjump.net/News.json" EventType="打开帮助" VerticalAlignment="Bottom"/>
-                    <local:MyIconButton Grid.Column="2" LogoScale="1.2" Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"
-                         Height="21" Margin="0,5,0,0"
-                         ToolTip="点此刷新" EventData="回声洞" EventType="刷新主页" VerticalAlignment="Bottom"/>
+               <local:MyIconButton Grid.Column="1" LogoScale="1.2" Logo="M13.5,4A1.5,1.5 0 0,0 12,5.5A1.5,1.5 0 0,0 13.5,7A1.5,1.5 0 0,0 15,5.5A1.5,1.5 0 0,0 13.5,4M13.14,8.77C11.95,8.87 8.7,11.46 8.7,11.46C8.5,11.61 8.56,11.6 8.72,11.88C8.88,12.15 8.86,12.17 9.05,12.04C9.25,11.91 9.58,11.7 10.13,11.36C12.25,10 10.47,13.14 9.56,18.43C9.2,21.05 11.56,19.7 12.17,19.3C12.77,18.91 14.38,17.8 14.54,17.69C14.76,17.54 14.6,17.42 14.43,17.17C14.31,17 14.19,17.12 14.19,17.12C13.54,17.55 12.35,18.45 12.19,17.88C12,17.31 13.22,13.4 13.89,10.71C14,10.07 14.3,8.67 13.14,8.77Z"
+                    Height="21" Margin="0,5,0,0"
+                    ToolTip="Minecraft新闻(作者：最亮的信标)" EventData="https://news.bugjump.net/News.json" EventType="打开帮助" VerticalAlignment="Bottom"/>
+               <local:MyIconButton Grid.Column="2" LogoScale="1.2" Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"
+                    Height="21" Margin="0,5,0,0"
+                    ToolTip="点此刷新" EventData="回声洞" EventType="刷新主页" VerticalAlignment="Bottom"/>
           </Grid>
           <!-- <local:MyButton Margin="0,-10,-5,0" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="刷新" EventType="刷新主页" EventData="回声洞">
                <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
@@ -55,8 +55,8 @@
                     <ColumnDefinition Width="3*" />
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
-                    <local:MyTextBox Margin="0,0,0,10" Name="site" Height="30" Grid.Column="0"/>
-                    <local:MyButton EventType="打开网页" EventData="{Binding ElementName=site,Path=Text}" Text="打开网页" Margin="5,0,0,10" Height="30" Grid.Column="1" Padding="2,0,2,0" ColorType="Highlight"/>
+               <local:MyTextBox Margin="0,0,0,10" Name="site" Height="30" Grid.Column="0"/>
+               <local:MyButton EventType="打开网页" EventData="{Binding ElementName=site,Path=Text}" Text="打开网页" Margin="5,0,0,10" Height="30" Grid.Column="1" Padding="2,0,2,0" ColorType="Highlight"/>
           </Grid>
           <local:MyCard Margin="0,0,0,6" Title="常用网站" CanSwap="True" IsSwaped="False">
                <StackPanel Margin="24,40,24,15">
@@ -102,29 +102,29 @@
                <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="清理垃圾" EventType="清理垃圾" ToolTip="清理垃圾文件。"/>
           </Grid>
           <Grid>
-              <Grid.ColumnDefinitions>
+               <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="1*" />
-              </Grid.ColumnDefinitions>
+               </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="内存优化" EventType="内存优化" ToolTip="将物理内存占用降低约1/3，不仅限于MC！&#xA;如果使用机械硬盘，这可能会导致一小段时间的严重卡顿。"/>
                <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="定位游戏启动脚本" EventType="打开文件" EventData="explorer.exe|/select,LatestLaunch.bat" ToolTip="打开PCL上一次启动 MC 的脚本(LatestLaunch.bat)。" />
           </Grid>
      </StackPanel>
 </local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="下载器" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="24,40,24,15">
-        <local:MyHint Margin="0,0,0,10" IsWarn="True" Text="链接必须为以http://或https://开头的网址，部分网址可能无法下载" />
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="3*" />
-                <ColumnDefinition Width="1*" />
-            </Grid.ColumnDefinitions>
-            <TextBlock Margin="0,7,0,0" Text="下载链接：" Grid.Column="0" FontSize="13"/>
-            <local:MyTextBox Margin="-5,0,0,0" Name="web" Height="30" Grid.Column="1"/>
-            <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0" ColorType="Highlight"/>
-        </Grid>
-    </StackPanel>  
+     <StackPanel Margin="24,40,24,15">
+          <local:MyHint Margin="0,0,0,10" IsWarn="True" Text="链接必须为以http://或https://开头的网址，部分网址可能无法下载" />
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <TextBlock Margin="0,7,0,0" Text="下载链接：" Grid.Column="0" FontSize="13"/>
+               <local:MyTextBox Margin="-5,0,0,0" Name="web" Height="30" Grid.Column="1"/>
+               <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0" ColorType="Highlight"/>
+          </Grid>
+     </StackPanel>  
 </local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="杂项" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
