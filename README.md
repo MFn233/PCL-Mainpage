@@ -7,3 +7,7 @@ An useful mainpage based on pcl2 by 龙腾猫跃
 ## 贡献者
 
 ![Contributors](https://contrib.rocks/image?repo=MFn233/PCL-Mainpage)
+
+## 讨论
+
+[点击加入KOOK频道](https://kook.top/uu1fvv)
