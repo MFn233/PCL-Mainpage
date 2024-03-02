@@ -55,8 +55,7 @@
                     <ColumnDefinition Width="3*" />
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
-               <TextBlock Margin="0,7,0,0" Text="   网页链接：" Grid.Column="0" FontSize="13"/>
-               <local:MyTextBox Margin="0,0,0,10" Name="site" Height="30" Grid.Column="0" ToolTip="在此输入链接，点击右边按钮打开自定义网页。&#xA;注意不要按下Enter键，这会直接启动游戏。"/>
+               <local:MyTextBox HintText="网页链接：" Margin="0,0,0,10" Name="site" Height="30" Grid.Column="0" ToolTip="在此输入链接，点击右边按钮打开自定义网页。&#xA;注意不要按下Enter键，这会直接启动游戏。"/>
                <local:MyButton EventType="打开网页" EventData="{Binding ElementName=site,Path=Text}" Text="打开网页" Margin="5,0,0,10" Height="30" Grid.Column="1" Padding="2,0,2,0" ColorType="Highlight"/>
           </Grid>
           <local:MyCard Margin="0,0,0,15" Title="常用网站" CanSwap="True" IsSwaped="False">
@@ -125,8 +124,7 @@
                     <ColumnDefinition Width="3*" />
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
-               <TextBlock Margin="0,7,0,0" Text="   下载链接：" Grid.Column="0" FontSize="13"/>
-               <local:MyTextBox Margin="0,0,0,0" Name="web" Height="30" Grid.Column="0" ToolTip="在此输入下载链接，点击右边按钮下载自定义文件。&#xA;注意不要按下Enter键，这会直接启动游戏。"/>
+               <local:MyTextBox HintText="下载链接：" Margin="0,0,0,0" Name="web" Height="30" Grid.Column="0" ToolTip="在此输入下载链接，点击右边按钮下载自定义文件。&#xA;注意不要按下Enter键，这会直接启动游戏。"/>
                <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0" ColorType="Highlight"/>
           </Grid>
      </StackPanel>  
