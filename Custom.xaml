@@ -1,4 +1,4 @@
-<!--
+﻿<!--
  ____                            ___                                                                                 
 /\  _`\   __                    /\_ \               /'\_/`\            __                                            
 \ \,\L\_\/\_\    ___ ___   _____\//\ \      __     /\      \     __   /\_\    ___   _____      __       __      __   
@@ -129,7 +129,7 @@
           </Grid>
      </StackPanel>  
 </local:MyCard>
-<local:MyCard Margin="0,0,0,12" Title="杂项" CanSwap="True" IsSwaped="True">
+<local:MyCard Margin="0,0,0,12" Title="更多" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
           <Grid>
                <Grid.ColumnDefinitions>
@@ -161,6 +161,9 @@
                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="Minecraft新闻"
                     EventType="打开帮助" EventData="https://news.bugjump.net/News.json"
                     ToolTip="作者：最亮的信标(Light-Beacon)" />
+               <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="主页市场"
+                    EventType="打开帮助" EventData="https://mfn233.github.io/PCL-Mainpage-Market/market.json"
+                    ToolTip="前往位于github的主页市场" />
           </Grid>
      </StackPanel>
 </local:MyCard>
