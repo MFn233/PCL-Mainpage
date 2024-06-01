@@ -62,7 +62,7 @@
                <StackPanel Margin="24,40,24,15">
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://cn.bing.com/favicon.ico" Title="Bing" Info="有求必应" EventType="打开网页" EventData="https://cn.bing.com/" Type="Clickable" />
-                    <local:MyListItem Margin="-2,0,0,0" Logo="https://www.bilibili.com/favicon.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
+                    <local:MyListItem Margin="-2,0,0,0" Logo="https://static.hdslb.com/images/favicon.ico" Title="Bilibili" Info="哔哩哔哩 (゜-゜)つロ 干杯~" EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://github.githubassets.com/favicon.ico" Title="GitHub" Info="Let's build from here" EventType="打开网页" EventData="https://github.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="知乎" Info="有问题，就会有答案" EventType="打开网页" EventData="https://www.zhihu.com/" Type="Clickable" />
                </StackPanel>
