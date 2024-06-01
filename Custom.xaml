@@ -49,7 +49,6 @@
 </local:MyCard>
 <local:MyCard Margin="0,0,0,12" Title="网页捷径" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="20,40,20,15">
-          <!-- 尝试做了一下，输入网页，按按钮打开。这将会加入V0.0.5中。 -->
           <Grid>
                <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="3*" />
@@ -81,8 +80,7 @@
                          -->
                     <!--
                          <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="MCBBS" Info="最大的我的世界《Minecraft》中文论坛" EventType="打开网页" EventData="https://www.mcbbs.net" Type="Clickable" />
-                    
-                         已寄
+                         已寄 R.I.P.
                     -->
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://klpbbs.com/favicon.ico" Title="苦力怕BBS" Info="最大的我的世界《Minecraft》基岩版（BE）中文资源、交流论坛之一" EventType="打开网页" EventData="https://klpbbs.com/" Type="Clickable" />
                     <local:MyListItem Margin="-2,0,0,0" Logo="https://www.minebbs.com/favicon.ico" Title="MineBBS" Info="以我的世界基岩版（MCBE）内容为主的Minecraft中文论坛。" EventType="打开网页" EventData="https://www.minebbs.com/" Type="Clickable" />
