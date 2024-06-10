@@ -13,7 +13,7 @@
 -->
 
 <!--欢迎页-->
-<local:MyCard Margin="0,0,0,8" Title="欢迎页" CanSwap="True" IsSwaped="False"> <!--下面不是卡片，所以不用0,0,0,12-->
+<local:MyCard Margin="0,0,0,8" Title="欢迎页"> <!--下面不是卡片，所以不用0,0,0,12-->
      <StackPanel Margin="24,40,24,15">
           <TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
                Text="欢迎使用Simple Mainpage!" />
