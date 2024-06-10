@@ -13,7 +13,7 @@
 -->
 
 <!--欢迎页-->
-<local:MyCard Margin="0,0,0,12" Title="欢迎页" CanSwap="True" IsSwaped="False">
+<local:MyCard Margin="0,0,0,8" Title="欢迎页" CanSwap="True" IsSwaped="False"> <!--下面不是卡片，所以不用0,0,0,12-->
      <StackPanel Margin="24,40,24,15">
           <TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
                Text="欢迎使用Simple Mainpage!" />
@@ -39,7 +39,7 @@
 </local:MyCard>
 
 <!--网页捷径（头一次知道能这么玩）-->
-<TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush4}" FontSize="15"
+<TextBlock HorizontalAlignment="Center" Margin="0,0,0,8" Foreground="{DynamicResource ColorBrush4}" FontSize="15"
      Text="--------------------------------网页捷径--------------------------------"/>
 <Grid>
      <Grid.ColumnDefinitions>
@@ -58,7 +58,7 @@
           <local:MyListItem Margin="-2,0,0,0" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="知乎" Info="有问题，就会有答案" EventType="打开网页" EventData="https://www.zhihu.com/" Type="Clickable" />
      </StackPanel>
 </local:MyCard>
-<local:MyCard Margin="0,0,0,15" Title="Minecraft相关" CanSwap="True" IsSwaped="True">
+<local:MyCard Margin="0,0,0,8" Title="Minecraft相关" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
           <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/Blocks/Grass.png"
                Title="Minecraft官网" Info="Minecraft国际版官网" EventType="打开网页" EventData="https://www.minecraft.net" Type="Clickable" />
@@ -85,7 +85,7 @@
 </local:MyCard>
 
 <!--工具-->
-<TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush4}" FontSize="15"
+<TextBlock HorizontalAlignment="Center" Margin="0,0,0,8" Foreground="{DynamicResource ColorBrush4}" FontSize="15"
      Text="--------------------------------工具--------------------------------"/>
 <local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
@@ -108,7 +108,7 @@
           </Grid>
      </StackPanel>
 </local:MyCard>
-<local:MyCard Margin="0,0,0,12" Title="下载器" CanSwap="True" IsSwaped="True">
+<local:MyCard Margin="0,0,0,8" Title="下载器" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
           <local:MyHint Margin="0,0,0,10" IsWarn="False" Text="使用 PCL 的高速多线程下载引擎下载任意文件。请注意，部分网站（例如百度网盘）可能会报错(403)已禁止，无法正常下载。"/>
           <local:MyHint Margin="0,0,0,10" IsWarn="True" Text="链接必须为以http://或https://开头的网址，部分网址可能无法下载" />
@@ -124,7 +124,7 @@
 </local:MyCard>
 
 <!--其它-->
-<TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush4}" FontSize="15"
+<TextBlock HorizontalAlignment="Center" Margin="0,0,0,8" Foreground="{DynamicResource ColorBrush4}" FontSize="15"
      Text="--------------------------------其它--------------------------------"/>
 <local:MyCard Margin="0,0,0,12" Title="更多" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
@@ -166,7 +166,7 @@
           </Grid>
      </StackPanel>
 </local:MyCard>
-<local:MyCard Margin="0,0,0,12" Title="关于" CanSwap="True" IsSwaped="True">
+<local:MyCard Margin="0,0,0,8" Title="关于" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
           <Grid>
                <Grid.ColumnDefinitions>
