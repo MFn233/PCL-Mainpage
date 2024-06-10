@@ -130,7 +130,7 @@
      Text="--------------------------------其它--------------------------------"/>
 <local:MyCard Margin="0,0,0,12" Title="更多" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
-          <local:MyHint IsWarn="False" Text="基岩版启动暂时出现问题，请等待PCL解决" Margin="0,0,0,10"/>
+          <local:MyHint Text="基岩版启动暂时出现问题，请等待PCL解决" Margin="0,0,0,10"/>
           <local:MyListItem Margin="-2,0,0,6" Logo="https://zh.minecraft.wiki/favicon.ico" Title="【重要】中文MC Wiki迁移通知" Info="中文Minecraft Wiki现已迁移至zh.minecraft.wiki,请不要再访问Fandom的旧wiki!" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5" Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,12" Logo="https://static.zhihu.com/heifetz/favicon.ico" Title="【重要】国内最大我的世界社区MCBBS将关闭" Info="基本确定！国内最大我的世界社区mcbbs将关闭！" EventType="打开网页" EventData="https://zhuanlan.zhihu.com/p/683019909" Type="Clickable" />
           <Grid>
