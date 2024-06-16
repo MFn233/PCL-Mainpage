@@ -86,8 +86,8 @@
           <local:MyListItem Margin="-2,0,0,0" Logo="https://www.mcmod.cn/favicon.ico" Title="MC百科" Info="最大的Minecraft中文Mod百科" EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
           <!-- 国内知名我居然不知道 -->
           <local:MyListItem Margin="-2,0,0,0" Logo="https://img1.minecraftzw.com/wp-content/uploads/2022/01/minecraftzw_20220126_1643240497.png" Title="我的世界中文站" Info="国内知名Minecraft中文主题网站" EventType="打开网页" EventData="https://www.minecraftzw.com/" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="https://i.sodamc.com/soda/2024/02/f.png" Title="SodaMC" Info="SodaMC我的世界中文论坛" EventType="复制文本" EventData="https://sodamc.com/" Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="http://oss.minecraftxz.com/favicon.ico" Title="我的世界中文下载站" Info="这个网站提供了各种我的世界的MOD/模组，包括光影包，材质包，地图，整合包，RPG模组等。你可以浏览最新推荐，最新投稿，或者按照分类查找你感兴趣的MOD/模组。" EventType="复制文本" EventData="https://minecraftxz.com/" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Logo="https://i.sodamc.com/soda/2024/02/f.png" Title="SodaMC" Info="SodaMC我的世界中文论坛" EventType="打开网页" EventData="https://sodamc.com/" Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0" Logo="http://oss.minecraftxz.com/favicon.ico" Title="我的世界中文下载站" Info="这个网站提供了各种我的世界的MOD/模组，包括光影包，材质包，地图，整合包，RPG模组等。你可以浏览最新推荐，最新投稿，或者按照分类查找你感兴趣的MOD/模组。" EventType="打开网页" EventData="https://minecraftxz.com/" Type="Clickable" />
      </StackPanel>
 </local:MyCard>
 <local:MyCard Margin="0,0,0,8" Title="Minecraft国外" CanSwap="True" IsSwaped="True">
