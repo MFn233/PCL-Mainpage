@@ -10,7 +10,7 @@ An useful mainpage based on pcl2 by 龙腾猫跃
 
 ![Contributors](https://contrib.rocks/image?repo=MFn233/PCL-Mainpage)
 
-~Bus factor : 1~
+~Bus factor : 3~
 
 ## 讨论
 
