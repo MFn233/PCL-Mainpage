@@ -169,7 +169,7 @@
                EventType="打开网页" EventData="https://mcdlspot.com/" Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,0" Logo="https://namemc.com/favicon.ico"
                Title="NameMC" Info="Minecraft Names and Skins"
-               EventType="打开网页" EventData="https://namemc.com/favicon.ico" Type="Clickable" />
+               EventType="打开网页" EventData="https://namemc.com/" Type="Clickable" />
      </StackPanel>
 </local:MyCard>
 
