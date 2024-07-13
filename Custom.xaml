@@ -111,9 +111,6 @@
           <local:MyListItem Margin="-2,0,0,0" Logo="https://www.mcmod.cn/favicon.ico" Title="MC百科"
                Info="最大的Minecraft中文Mod百科" EventType="打开网页" EventData="https://www.mcmod.cn/"
                Type="Clickable" />
-          <local:MyListItem Margin="-2,0,0,0" Logo="https://www.mcnav.net/wp-content/uploads/2021/08/1627802813-logo_static.png"
-               Title="MC导航网" Info="这个网站提供了各大MC有关网站的导航页面，有很多简单主页没有收录的！"
-               EventType="打开网页" EventData="https://www.mcnav.net/" Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,0" Logo="https://i.sodamc.com/soda/2024/02/f.png"
                Title="SodaMC" Info="SodaMC我的世界中文论坛" EventType="打开网页" EventData="https://sodamc.com/"
                Type="Clickable" />
