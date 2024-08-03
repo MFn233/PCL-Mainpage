@@ -46,9 +46,16 @@
 </local:MyCard>
 
 <!--网页捷径（头一次知道能这么玩）-->
-<TextBlock HorizontalAlignment="Center" Margin="0,0,0,8" Foreground="{DynamicResource ColorBrush4}"
-     FontSize="15"
-     Text="------------------------------网页捷径------------------------------" />
+<Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*"/>
+          <ColumnDefinition Width="80"/>
+          <ColumnDefinition Width="1*"/>
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"  Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="网页捷径" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" Stretch="Fill" Grid.Column="2" />
+</Grid>
 <Grid>
      <Grid.ColumnDefinitions>
           <ColumnDefinition Width="3*" />
@@ -174,9 +181,16 @@
 </local:MyCard>
 
 <!--工具-->
-<TextBlock HorizontalAlignment="Center" Margin="0,0,0,8" Foreground="{DynamicResource ColorBrush4}"
-     FontSize="15"
-     Text="--------------------------------工具--------------------------------" />
+<Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*"/>
+          <ColumnDefinition Width="80"/>
+          <ColumnDefinition Width="1*"/>
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"  Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="工具" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" Stretch="Fill" Grid.Column="2" />
+</Grid>
 <local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
           <local:MyHint IsWarn="False" Text="此处所有功能均为启动器自带，出问题请上报至PCL2仓库" Margin="0,0,0,10" />
@@ -224,10 +238,17 @@
 </local:MyCard>
 
 <!--其它-->
-<TextBlock HorizontalAlignment="Center" Margin="0,0,0,8" Foreground="{DynamicResource ColorBrush4}"
-     FontSize="15"
-     Text="--------------------------------其它--------------------------------" />
-<local:MyCard Margin="0,0,0,12" Title="更多" CanSwap="True" IsSwaped="True">
+<Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*"/>
+          <ColumnDefinition Width="80"/>
+          <ColumnDefinition Width="1*"/>
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"  Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="其它" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" Stretch="Fill" Grid.Column="2" />
+</Grid>
+<local:MyCard Margin="0,0,0,12" Title="杂项" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
           <!-- 
                <local:MyHint Text="基岩版启动暂时出现问题，请等待PCL解决" Margin="0,0,0,10"/> 
@@ -239,7 +260,7 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,0,10,10" Height="35" Text="今日人品"
-                    EventType="今日人品" ToolTip="试试手气！"/>
+                    EventType="今日人品" ToolTip="试试手气！" ColorType="Highlight"/>
                <!--
                     <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="二次元图" EventType="打开网页"
                EventData=""/> 
@@ -253,11 +274,6 @@
                     ToolTip="如果你的电脑上安装了Minecraft基岩版，按下这个按钮将会以URL Scheme的方式启动它。" /> 
                     
                     方式一（暂时失效）
-               -->
-               <!-- 
-                    原理是通过url scheme
-                    
-                    其实不是什么很深奥的玩意
                -->
                <local:MyButton Grid.Column="1" Margin="0,0,0,10" Text="启动基岩版"
                     EventType="打开文件" EventData='cmd|/C "start minecraft:// \n exit"'
@@ -289,10 +305,10 @@
                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="更新日志"
                     EventType="打开网页"
                     EventData="https://github.com/MFn233/PCL-Mainpage/releases/latest"
-                    ToolTip="将前往GitHub查看最新版本的更新日志" />
+                    ToolTip="前往GitHub查看最新版本的更新日志" />
                <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="项目仓库"
                     EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"
-                    ToolTip="将前往GitHub查看项目仓库" />
+                    ToolTip="前往GitHub查看项目仓库" />
           </Grid>
           <Grid>
                <Grid.ColumnDefinitions>
@@ -310,23 +326,3 @@
           </Grid>
      </StackPanel>
 </local:MyCard>
-
-
-<!-- 
-     关于一些制作规范，既是给帮忙发Pull Request的朋友看，也是为了给将来自己看（万一鸽太久忘了就完了（划掉））
-     一切未提到的，认准龙猫的教程文件
-
-     1.卡片间Margin均为上0下12，StackPanel的Margin将原不居中改为24,40,24,15，左右均为24。尽量避免卡片嵌套
-
-     2.Grid的不同行不使用Row，而是使用不同Grid（因为我之前不会，而且这样还挺方便的（划掉）），首行Grid不设上Margin，第二行起上Margin均为10，每行Grid均不写下Margin
-
-     3.Grid不同按钮间，间隔用前一按钮的右Margin 10为表示，不设置右Margin，一行两个按钮（不排除以后会有一行多个的情况）
-
-     4.鸣谢与关于作者的窗口编写极为困难，建议复制到记事本
-
-     5.ListItem左Margin需设置-2，其余Margin视情况而定。若下方为按钮，则下Margin为12，在其他地方引入ListItem（而不是网页捷径那样超长的），可以考虑两Item间上一个Item下Margin设为6表示间隔以维持美观
-
-     6.有些地方可能有特殊情况需要注释，有些注释则需要被删除
-
-     7.选择的网页捷径需要质量较高，不要把捷径卡片弄得过于臃肿
--->
