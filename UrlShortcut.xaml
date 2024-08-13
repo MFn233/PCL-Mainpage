@@ -107,7 +107,7 @@
                EventType="打开网页" EventData="https://www.minecraftforum.net/" Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,0"
                Logo="pack://application:,,,/images/blocks/CommandBlock.png" Title="MCArchive"
-               Info="a website where old (and new) Minecraft mods can be hosted and preserved for future generations."
+               Info="A website where old (and new) Minecraft mods can be hosted and preserved for future generations."
                EventType="打开网页" EventData="https://github.com/MCArchive/MCArchive" Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,0" Logo="pack://application:,,,/images/blocks/Anvil.png"
                Title="Curseforge" Info="The Home for the Best Minecraft Mods" EventType="打开网页"
