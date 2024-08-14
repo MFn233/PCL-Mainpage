@@ -268,17 +268,11 @@
                     虽然我没刷出来过，不过还是删掉为好吧
                     或许我会找其他正常点的api替代，也或许以后都不会再有了
                     api: https://www.loliapi.com/
-               -->
-               <!-- <local:MyButton Grid.Column="1" Margin="0,0,0,10" Text="启动Minecraft基岩版"
+               --> 
+<local:MyButton Grid.Column="1" Margin="0,0,0,10" Text="启动Minecraft基岩版"
                     EventType="打开网页" EventData="minecraft://"
                     ToolTip="如果你的电脑上安装了Minecraft基岩版，按下这个按钮将会以URL Scheme的方式启动它。" /> 
-                    
-                    方式一（暂时失效）
-               -->
-               <local:MyButton Grid.Column="1" Margin="0,0,0,10" Text="启动基岩版"
-                    EventType="打开文件" EventData='cmd|/C "start minecraft:// \n exit"'
-                    ToolTip="如果你的电脑上安装了Minecraft基岩版，&#xA;按下这个按钮将会以URL Scheme的方式启动它。" />
-               <!-- 网友的智慧！！用cmd打开minecraft://，然后立即退出（这个思路是我想到的，但是灵感来源于issue#40） -->
+            
           </Grid>
           <Grid>
                <Grid.ColumnDefinitions>
