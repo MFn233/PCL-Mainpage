@@ -15,5 +15,4 @@ jobs:
           RTH_API_KEY: ${{ secrets.RTH_API_KEY }}
         with:
           site: "mfn.lingyunawa.top"
-          build: "ls"
           outdir: "." 
