@@ -1,10 +1,8 @@
 # PCL-Mainpage
 
-An useful mainpage based on pcl2 by 龙腾猫跃
+An useful mainpage based on PCL2 by 龙腾猫跃
 
 欢迎Fork此项目，制作你自己的主页文件！
-
-[点我打开文件Custom.xaml](./Custom.xaml)
 
 ## 贡献者
 
@@ -15,3 +13,5 @@ An useful mainpage based on pcl2 by 龙腾猫跃
 ## 讨论
 
 [点击加入KOOK频道](https://kook.top/uu1fvv)
+
+…或者[发表Discussion](https://github.com/MFn233/PCL-Mainpage/discussions/new/choose)
