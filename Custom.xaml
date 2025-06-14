@@ -2,7 +2,8 @@
      \- Simple Mainpage -\
       \- by MFn -\
        \- https://github.com/MFn233/PCL-Mainpage -\
-        \- Version: 0.1.2 -\
+        \- Version: 0.1.3 -\
+         \- Stable Version 1 -\
 -->
 
 <!--欢迎页-->
@@ -10,7 +11,7 @@
      <StackPanel Margin="24,35,24,15">
           <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"
                Foreground="{DynamicResource ColorBrush2}" FontSize="20"
-               Text="欢迎使用Simple Mainpage!" />
+               Text="欢迎使用 Simple Mainpage!" />
           <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" />
           <!--因为“你知道吗”在启动游戏的时候会出现，所以我只在这里设置了回声洞-->
           <TextBlock Margin="5,0,5,12" TextWrapping="Wrap" HorizontalAlignment="Center"
@@ -75,7 +76,7 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Text="打开 PCL 日志"
-                    EventType="打开文件" EventData="Log1.txt" ToolTip="查看当前PCL启动器的日志文件。" />
+                    EventType="打开文件" EventData="Log1.txt" ToolTip="查看当前 PCL 启动器的日志文件。" />
                <local:MyButton Grid.Column="1" Margin="0,0,0,0" Height="35" Text="清理垃圾"
                     EventType="清理垃圾" ToolTip="清理垃圾文件。" />
           </Grid>
@@ -88,7 +89,7 @@
                     EventType="内存优化" ToolTip="将物理内存占用降低约 1/3 ，不仅限于 MC ！&#xA;如果使用机械硬盘，这可能会导致一小段时间的严重卡顿。" />
                <local:MyButton Grid.Column="1" Margin="0,10,0,0" Height="35" Text="定位游戏启动脚本"
                     EventType="打开文件" EventData="explorer.exe|/select,LatestLaunch.bat"
-                    ToolTip="打开PCL上一次启动 MC 的脚本 (LatestLaunch.bat) 。" />
+                    ToolTip="打开 PCL 上一次启动 MC 的脚本 (LatestLaunch.bat) 。" />
           </Grid>
      </StackPanel>
 </local:MyCard>
@@ -104,7 +105,7 @@
                     <ColumnDefinition Width="1*" />
                </Grid.ColumnDefinitions>
                <local:MyTextBox HintText="下载链接：" Margin="0,0,0,0" Name="web" Height="30"
-                    Grid.Column="0" ToolTip="在此输入下载链接，点击右边按钮下载自定义文件。&#xA;注意不要按下Enter键，这会直接启动游戏。" />
+                    Grid.Column="0" ToolTip="在此输入下载链接，点击右边按钮下载自定义文件。&#xA;注意不要按下 Enter 键，这会直接启动游戏。" />
                <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}"
                     Text="开始下载→" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0"
                     ColorType="Highlight" />
@@ -129,13 +130,17 @@
 <local:MyCard Margin="0,0,0,12" Title="友情链接" CanSwap="True" IsSwaped="True">
      <StackPanel Margin="24,40,24,15">
           <local:MyListItem Margin="-2,0,0,0"
-               Logo="pack://application:,,,/images/blocks/Grass.png" Title="新闻页面"
-               Info="作者：最亮的信标" EventType="打开帮助" EventData="https://news.bugjump.net/News.json"
+               Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="友链申请"
+               Info="申请添加你的网站作为简单主页的友情链接! " EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage/issues/new?template=%E5%8F%8B%E9%93%BE%E7%94%B3%E8%AF%B7.md"
                Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,0"
-               Logo="pack://application:,,,/images/blocks/Grass.png" Title="主页市场"
-               Info="作者：MFn233" EventType="打开帮助"
-               EventData="https://mfn233.github.io/PCL-Mainpage-Market/market.json"
+               Logo="pack://application:,,,/images/blocks/Grass.png" Title="新闻页面"
+               Info="作者: 最亮的信标" EventType="打开帮助" EventData="https://news.bugjump.net/News.json"
+               Type="Clickable" />
+          <local:MyListItem Margin="-2,0,0,0"
+               Logo="pack://application:,,,/images/blocks/Grass.png" Title="主页市场 (v2)"
+               Info="作者: Lingyun &amp; MFn233" EventType="打开网页"
+               EventData="https://github.com/HomePlaza-Of-PCL2/Homepage-Market"
                Type="Clickable" />
      </StackPanel>
 </local:MyCard>
@@ -146,19 +151,19 @@
                EventType="打开网页"
                EventData="https://github.com/MFn233/PCL-Mainpage/releases/latest"
                Type="Clickable" />
-          <local:MyListItem Margin="-2,0,10,0" Info="GitHub项目仓库"
+          <local:MyListItem Margin="-2,0,10,0" Info="GitHub 项目仓库"
                Logo="pack://application:,,,/images/blocks/CommandBlock.png" Title="项目仓库"
                EventType="打开网页" EventData="https://github.com/MFn233/PCL-Mainpage"
                Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,0" Info="排名不分先后"
                Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="鸣谢"
                EventType="弹出窗口"
-               EventData="鸣谢|感谢以下朋友！此窗口专门用于记录对这个项目有帮助的除作者之外的其他人，括号中注明了他们的来历。\n\n(GitHub) MCSteve123提交大量pull request\n(GitHub) Ad_closeNN提交大量pull request\n(GitHub) JingHai-Lingyun提供改进建议\n(GitHub) wuliaodexiaoluo提供改进建议\n(GitHub) erqianwu提供改进建议\n(sipc.ink) SIPC曾帮助将主页文件挂载于云服务器"
+               EventData="鸣谢|感谢以下朋友！此窗口专门用于记录对这个项目有帮助的除作者之外的其他人，括号中注明了他们的来历。\n\n(GitHub) MCSteve123 提交大量 pull request\n(GitHub) Ad_closeNN 提交大量 pull request\n(GitHub) JingHai-Lingyun 提供改进建议\n(GitHub) wuliaodexiaoluo 提供改进建议\n(GitHub) erqianwu 提供改进建议\n(sipc.ink) SIPC 曾帮助将主页文件挂载于云服务器"
                Type="Clickable" />
           <local:MyListItem Margin="-2,0,0,0" Info="MFn233"
                Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="关于作者"
                EventType="弹出窗口"
-               EventData="关于作者|我是MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在GitHub上开源。欢迎你前往仓库为我的项目提issue\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n©MFn233 2023/7/22"
+               EventData="关于作者|我是 MFn233，一个妄图写出完美代码的程序员，该主页目前由我独立完成，并在 GitHub 上开源。欢迎你前往仓库为我的项目提 issue。\n\n如果你真的很希望更多地了解我，欢迎访问我的网站: mfn233.github.io\n\n©MFn233 2023/7/22"
                Type="Clickable" />
      </StackPanel>
 </local:MyCard>
