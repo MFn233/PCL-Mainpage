@@ -67,7 +67,7 @@
      <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
           Stretch="Fill" Grid.Column="2" />
 </Grid>
-<local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwaped="True">
+<local:MyCard Margin="0,0,0,12" Title="启动器工具" CanSwap="True" IsSwapped="True">
      <StackPanel Margin="24,40,24,15">
           <local:MyHint IsWarn="False" Text="此处所有功能均为启动器自带，出问题请上报至 PCL2 仓库" Margin="0,0,0,10" />
           <Grid>
@@ -93,7 +93,7 @@
           </Grid>
      </StackPanel>
 </local:MyCard>
-<local:MyCard Margin="0,0,0,8" Title="下载器" CanSwap="True" IsSwaped="True">
+<local:MyCard Margin="0,0,0,8" Title="下载器" CanSwap="True" IsSwapped="True">
      <StackPanel Margin="24,40,24,15">
           <local:MyHint Margin="0,0,0,10" IsWarn="False"
                Text="使用 PCL 的高速多线程下载引擎下载任意文件。请注意，部分网站 (例如百度网盘) 可能会报错 (403) 已禁止，无法正常下载。" />
@@ -127,7 +127,7 @@
      <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
           Stretch="Fill" Grid.Column="2" />
 </Grid>
-<local:MyCard Margin="0,0,0,12" Title="友情链接" CanSwap="True" IsSwaped="True">
+<local:MyCard Margin="0,0,0,12" Title="友情链接" CanSwap="True" IsSwapped="True">
      <StackPanel Margin="24,40,24,15">
           <local:MyListItem Margin="-2,0,0,0"
                Logo="pack://application:,,,/images/blocks/GoldBlock.png" Title="友链申请"
@@ -144,7 +144,7 @@
                Type="Clickable" />
      </StackPanel>
 </local:MyCard>
-<local:MyCard Margin="0,0,0,8" Title="关于" CanSwap="True" IsSwaped="True">
+<local:MyCard Margin="0,0,0,8" Title="关于" CanSwap="True" IsSwapped="True">
      <StackPanel Margin="24,40,24,15">
           <local:MyListItem Margin="-2,0,10,0" Info="最新版本的更新日志"
                Logo="pack://application:,,,/images/blocks/RedstoneLampOn.png" Title="更新日志"
@@ -167,3 +167,4 @@
                Type="Clickable" />
      </StackPanel>
 </local:MyCard>
+
