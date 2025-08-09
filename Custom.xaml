@@ -57,7 +57,7 @@
                Type="Clickable"
                Info="打开网页捷径页面。"
                EventType="打开帮助"
-               EventData="./urlshortcut/main.json" />
+               EventData="https://mfn233.github.io/PCL-Mainpage/urlshortcut/main.json" />
      </StackPanel>
 </local:MyCard>
 <!--工具-->
