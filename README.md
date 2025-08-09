@@ -1,8 +1,10 @@
 # 简单主页
 
-An useful mainpage based on PCL2 by 龙腾猫跃
+这里是 Minecraft PCL2 启动器主页预设“简单主页”的仓库。
 
-欢迎 Fork 此项目，制作你自己的主页文件！
+简单主页一直秉承着简洁、优雅、低加载负担、符合 PCL 设计风格的理念，力求打造优秀的体验。
+
+欢迎 Fork 此项目，制作你自己的主页文件！如果你有想法，欢迎提 issue，同时也欢迎提交 pull request！
 
 ## 贡献者
 
@@ -11,6 +13,8 @@ An useful mainpage based on PCL2 by 龙腾猫跃
 ~Bus factor : 3~
 
 ## 折跃门
+
+[GitHub 仓库](https://github.com/MFn233/PCL-Mainpage/)
 
 [Gitee 仓库](https://gitee.com/mfn233/PCL-Mainpage)
 
