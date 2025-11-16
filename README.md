@@ -30,6 +30,5 @@
 
 ## 讨论
 
-[点击加入 KOOK 频道](https://kook.top/uu1fvv)
-
-[发表 Discussion](https://github.com/MFn233/PCL-Mainpage/discussions/new/choose)
+[![](https://img.shields.io/badge/KOOK%20%E9%A2%91%E9%81%93-%237acc35?style=flat)](https://kook.top/uu1fvv)
+[![](https://img.shields.io/badge/%E5%8F%91%E8%A1%A8%20Discussion-purple?style=flat)](https://github.com/MFn233/PCL-Mainpage/discussions/new/choose)
