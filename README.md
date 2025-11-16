@@ -6,7 +6,17 @@
 
 欢迎 *Fork* 此项目，制作你自己的主页文件！如果你有想法，欢迎提 *issue*，同时也欢迎提交 *pull request* ！
 
-## 贡献者
+## Star History
+
+<a href="https://www.star-history.com/#MFn233/PCL-Mainpage&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MFn233/PCL-Mainpage&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MFn233/PCL-Mainpage&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=MFn233/PCL-Mainpage&type=date&legend=top-left" />
+ </picture>
+</a>
+
+## Contributors
 
 ![Contributors](https://contrib.rocks/image?repo=MFn233/PCL-Mainpage)
 
@@ -14,14 +24,12 @@
 
 ## 折跃门
 
-[GitHub 仓库](https://github.com/MFn233/PCL-Mainpage/)
-
-[Gitee 仓库](https://gitee.com/mfn233/PCL-Mainpage)
-
-[GitCode 仓库](https://gitcode.com/MFn233/PCL-Mainpage)
+[![](https://img.shields.io/badge/GitHub%20%E4%BB%93%E5%BA%93-purple?style=flat)](https://github.com/MFn233/PCL-Mainpage/)
+[![](https://img.shields.io/badge/Gitee%20%E4%BB%93%E5%BA%93-%23b61f25?style=flat)](https://gitee.com/mfn233/PCL-Mainpage)
+[![](https://img.shields.io/badge/GitCode%20%E4%BB%93%E5%BA%93-%23d31c3c?style=flat)](https://gitcode.com/MFn233/PCL-Mainpage)
 
 ## 讨论
 
 [点击加入 KOOK 频道](https://kook.top/uu1fvv)
 
-…或者[发表 Discussion](https://github.com/MFn233/PCL-Mainpage/discussions/new/choose)
+[发表 Discussion](https://github.com/MFn233/PCL-Mainpage/discussions/new/choose)
