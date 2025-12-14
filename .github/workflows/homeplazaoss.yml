@@ -16,35 +16,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Install rclone
-      - name: Install rclone
+      # 7. 安装 rclone (保持不变)
+      - name: 🚀 Install rclone
         run: |
           curl https://rclone.org/install.sh | sudo bash
 
-      # Configure rclone for WebDAV
-      - name: Configure rclone for WebDAV
+      # 8. 配置 rclone for WebDAV (Alist) (保持不变)
+      - name: ⚙️ Configure rclone for WebDAV (Alist)
         run: |
+          # 请注意，/dav 是 Alist WebDAV 的默认路径，如果您的配置不同请修改
           rclone config create alist_webdav webdav \
-            url http://${{ secrets.WEBDAV_HOST }}:${{ secrets.WEBDAV_PORT }}/dav \
+            url https://${{ secrets.WEBDAV_HOST }}:${{ secrets.WEBDAV_PORT }}/dav \
             user ${{ secrets.ALIST_USERNAME }} \
             pass ${{ secrets.ALIST_PASSWORD }}
 
-      # Check current working directory (debugging step)
-      - name: Print current working directory
+      # 9. 替换文件到目标目录 (保持不变)
+      - name: 📤 Copy build files to Alist WebDAV
         run: |
-          pwd
-          ls -al
+          rclone copy Custom.xaml alist_webdav:/ --checksum --size-only --retries 3
+          rclone copy Custom.xaml.ini alist_webdav:/ --checksum --size-only --retries 3
+          rclone copy Custom.json alist_webdav:/ --checksum --size-only --retries 3
 
-      # Clear the target folder on Alist WebDAV
-      - name: Clear target folder on Alist WebDAV
-        run: |
-          rclone delete alist_webdav:/ --rmdirs  # Deletes all files and empty directories from the target folder
-
-      # Sync all files to Alist WebDAV (sync the entire repo)
-      - name: Sync all files to Alist
-        run: |
-          rclone copy ./ alist_webdav:/ --checksum --size-only --retries 3  # Force update every time
-
-      # Optionally, clean up rclone configuration (for security)
-      - name: Clean up rclone config
+      # 10. 清理 rclone 配置 (保持不变)
+      - name: 🧹 Clean up rclone config
+        if: always()
         run: rm -rf ~/.config/rclone
