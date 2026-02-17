@@ -6,6 +6,10 @@
 
 欢迎 *Fork* 此项目，制作你自己的主页文件！如果你有想法，欢迎提 *issue*，同时也欢迎提交 *pull request* ！
 
+现在简单主页已经由 **Homepage Plaza OSS Project** 托管，所以，若无法加载或加载卡顿，请前往 Homepage Plaza 发送 issue。
+
+[Homepage Plaza 链接在此](https://github.com/HomePlaza-Of-PCL2)
+
 ## Star History
 
 <a href="https://www.star-history.com/#MFn233/PCL-Mainpage&type=date&legend=top-left">
